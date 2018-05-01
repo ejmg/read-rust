@@ -1,0 +1,32 @@
+{
+  "last_updated": "2018-05-01T14:28:00+10:00",
+  "tools": [
+    {
+      "uuid": "b3473877-c502-466c-a56d-f496e180f5a3",
+      "name": "alt",
+      "shortdesc": "Quickly find an alternate file",
+      "description": "Log desc",
+      "features": [
+        "One",
+        "Two",
+        "Three"
+      ],
+      "project_url": "",
+      "repo_url": "",
+      "documentation_url": "",
+      "download_url": "",
+      "asciicast_url": "https://example.com/a/146112",
+      "platform_support": {
+        "FreeBSD": true,
+        "Linux": true,
+        "macOS": true,
+        "NetBSD": true,
+        "OpenBSD": true,
+        "Windows": true
+      },
+      "version_tested": "0.2.0",
+      "date_added": "2018-05-01T14:28:00+10:00"
+    }
+  ]
+}
+
