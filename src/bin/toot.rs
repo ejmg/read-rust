@@ -97,10 +97,10 @@ fn run(
         .filter(|item| !tootlist.contains(&item.id))
         .collect();
 
-    if to_toot.is_empty() {
-        println!("Nothing to toot!");
-        return Ok(());
-    }
+    // if to_toot.is_empty() {
+    //     println!("Nothing to toot!");
+    //     return Ok(());
+    // }
 
     let mastodon = connect_to_mastodon()?;
     for item in to_toot {
@@ -115,6 +115,9 @@ fn run(
     if !dry_run {
         let _ = tootlist.save(&tootlist_path)?;
     }
+
+    let test_toot = "https://rustedneuron.com/@jackwilliambell/101115962682339528".to_string();
+    println!("Search results = {:?}", mastodon.search(test_toot, true));
 
     Ok(())
 }
